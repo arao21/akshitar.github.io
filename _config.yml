@@ -23,7 +23,7 @@ repository               : "arao21/akshitar.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "Profile Pic.jpeg"
   name             : "Akshita Rao"
   pronouns         : # example: "she/her"  
   bio              : "I am a fourth-year PhD student in the Department of Bioengineering at Stanford University, advised by Prof. Todd Coleman. Prior to joining Stanford, I received a BS in Mechanical Engineering and Biomedical Engineering, and an MS in Bioengineering, both from Tufts University. My research focuses on multimodal electrophysiology and wearable sensing to understand brain-body coupling."
