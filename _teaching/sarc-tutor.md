@@ -5,7 +5,7 @@ type: teaching
 permalink: /teaching/sarc-tutor/
 date: 2024-06-01
 role: "Tutor"
-institution: "Stanford University"
+venue: "Stanford University"
 ---
 
 Provided 1:1 tutoring for Stanford Summer Session students across topics including probability and statistics, dynamics, controls, and neuroscience.
