@@ -7,4 +7,4 @@ role: "Service"
 institution: "Stanford University"
 ---
 
-Reviewed applications for Stanford Summer Session programs and participated in admissions evaluation and selection.
+Reviewed over 200 high school applications for Stanford Summer Session program and participated in admissions evaluation and selection.
