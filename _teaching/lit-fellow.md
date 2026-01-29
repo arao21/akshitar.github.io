@@ -5,7 +5,7 @@ type: teaching
 permalink: /teaching/lit-fellow/
 date: 2023-09-01
 role: "Fellow"
-institution: "Stanford Center for Teaching and Learning"
+venue: "Stanford Center for Teaching and Learning"
 ---
 
 Selected fellow in a multi-year program focused on equity-minded teaching in STEM.
