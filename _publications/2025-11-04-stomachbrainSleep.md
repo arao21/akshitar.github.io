@@ -1,11 +1,15 @@
 ---
-title: "Simultaneous stomach-brain electrophysiology reveals dynamic coupling in human sleep"
+title: "Simultaneous stomach–brain electrophysiology reveals dynamic coupling in human sleep"
 collection: publications
 category: manuscripts
-permalink: /publication/2025-11-04-stomachbrainSleep
+permalink: /publication/2025-11-04-stomach-brain-sleep/
 date: 2025-11-04
-venue: 'bioRxiv'
-paperurl: 'https://www.biorxiv.org/content/10.1101/2025.11.13.686572v1'
-citation: 'Rao AA; Fredericks M; Dresler M; Rebollo I; Zeitzer JM; Schoch SF; Coleman TP. (2025) &quotSimultaneous stomach-brain electrophysiology reveals dynamic coupling in human sleep.&quot <i>bioRxiv<i>.'
+venue: "bioRxiv"
+paperurl: https://www.biorxiv.org/content/10.1101/2025.11.13.686572v1
 ---
-Sleep involves continuous communication between the brain and body, yet the dynamics of peripheral signals during human sleep remain poorly understood. Here we tested whether gastric electrophysiology exhibits infraslow structure and coordinated fluctuations with cortical rhythms indicative of sleep physiology. 
+
+Rao AA, Fredericks M, Dresler M, Rebollo I, Zeitzer JM, Schoch SF, Coleman TP.  
+**Simultaneous stomach–brain electrophysiology reveals dynamic coupling in human sleep.**  
+*bioRxiv*, 2025.
+
+Sleep involves continuous communication between the brain and body, yet the dynamics of peripheral physiology during sleep remain poorly understood. We show that gastric electrophysiology exhibits infraslow structure and coordinated fluctuations with cortical rhythms, revealing a previously uncharacterized mode of brain–body coupling during human sleep.
