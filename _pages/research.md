@@ -48,6 +48,6 @@ I previously worked on integrated bioelectronic platforms for monitoring and mod
 
 ---
 
-## Collaborations & Tools (optional)
-- Data processing in Python (MNE, NumPy/SciPy), statistical modeling (statsmodels), reproducible pipelines (HPC + Git)
+## Collaborations & Tools
+- Data processing in Python (MNE, NumPy/SciPy), statistical modeling (statsmodels, scikit-learn, PyTorch), reproducible pipelines (HPC + Git)
 - Open to collaborations on multimodal physiology, wearable analytics, and clinical translation
