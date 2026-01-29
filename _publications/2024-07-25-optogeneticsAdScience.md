@@ -1,8 +1,8 @@
 ---
 title: "An Integrated Optogenetic and Bioelectronic Platform for Regulating Cardiomyocyte Function"
 collection: publications
-category: manuscript
-permalink: /publication/2024-02-17-paper-title-number-4
+category: manuscripts
+permalink: /publication/2024-07-25-optogeneticsAdScience
 date: 2024-07-25
 venue: 'Advanced Science'
 paperurl: 'https://pubmed.ncbi.nlm.nih.gov/39054679/'
