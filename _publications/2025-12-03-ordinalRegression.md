@@ -1,7 +1,7 @@
 ---
 title: "Dynamic Facial Analysis for Predicting Facial Palsy Outcomes: Comparing Landmark Detection Models and Integrating Ordinal Regression"
 collection: publications
-category: conference
+category: conferences
 permalink: /publication/2025-12-03-ordinalRegression
 date: 2025-12-03
 venue: '2025 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)'
