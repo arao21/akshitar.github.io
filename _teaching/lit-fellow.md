@@ -4,6 +4,7 @@ collection: teaching
 permalink: /teaching/lit-fellow/
 date: 2023-25
 role: "Fellow"
+type: teaching
 institution: "Stanford Center for Teaching and Learning"
 ---
 
