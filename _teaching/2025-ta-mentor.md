@@ -8,4 +8,3 @@ role: "Mentor"
 venue: "Stanford University"
 ---
 
-Mentor graduate teaching assistants across the Bioengineering department, providing guidance on inclusive teaching practices, classroom management, and professional development.
