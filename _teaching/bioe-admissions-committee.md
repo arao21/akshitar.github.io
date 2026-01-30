@@ -1,11 +1,16 @@
 ---
-title: "Bioengineering Student Admissions Committee Member"
+title: "BioE PhD Admissions Committee Member"
 collection: teaching
+type: service
 permalink: /teaching/bioe-admissions-committee/
 date: 2024-12-01
-role: "Service"
 venue: "Stanford University"
-type: service
-excerpt: "Reviewed approximately 55 applications and interviewed prospective students for the Stanford Bioengineering PhD program. Served during both 2024 and 2025."
+excerpt: "Reviewed and interviewed applicants for the Bioengineering PhD program."
 ---
 
+Member of the **Stanford Bioengineering PhD Admissions Committee**.
+
+- Reviewed ~55 PhD applications  
+- Interviewed prospective students  
+- Participated in admissions evaluation discussions  
+- Served across 2024–2025 admissions cycles
