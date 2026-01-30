@@ -13,4 +13,4 @@ Member of the **Stanford Bioengineering PhD Admissions Committee**.
 - Reviewed ~55 PhD applications  
 - Interviewed prospective students  
 - Participated in admissions evaluation discussions  
-- Served across 2024–2025 admissions cycles
+- Served across 2025 and 2026 admissions cycles
