@@ -8,13 +8,13 @@ author_profile: true
 {% assign talks = site.talks | sort: "date" | reverse %}
 
 <p style="margin-top:-0.5rem;">
-  <a class="btn btn--primary btn--small" href="{{ base_path }}/talkmap/">View talks map</a>
+  <a class="btn btn--primary btn--small" href="{{ base_path }}/talkmap.html">View talks map</a>
 </p>
 
 {% assign years = talks | group_by_exp: "t", "t.date | date: '%Y'" %}
 
 {% for y in years %}
-### {{ y.name }}
+## {{ y.name }}
 
 {% assign invited = y.items | where: "talk_type", "invited" %}
 {% assign conf    = y.items | where: "talk_type", "conference" %}
@@ -22,10 +22,12 @@ author_profile: true
 {% assign guest   = y.items | where: "talk_type", "guest_lecture" %}
 {% assign groupm  = y.items | where: "talk_type", "group_meeting" %}
 
-<h3>Invited talks &amp; seminars</h3>
+{% if invited.size > 0 %}
+#### Invited talks & seminars
 {% for t in invited %}
   {% include talk-timeline-item.html talk=t %}
 {% endfor %}
+{% endif %}
 
 {% if conf.size > 0 %}
 #### Conferences & posters
@@ -48,9 +50,11 @@ author_profile: true
 {% endfor %}
 {% endif %}
 
-<h3>Posters</h3>
+{% if posters.size > 0 %}
+#### Posters
 {% for t in posters %}
   {% include talk-timeline-item.html talk=t %}
 {% endfor %}
+{% endif %}
 
 {% endfor %}
