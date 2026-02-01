@@ -13,6 +13,7 @@ location: "San Diego, California, USA"   # used for the map (City, State, Countr
 description: "Presented at NIH Sleep and Circadian Neurobiology DataBlitz Nomination (ranked top 20 among 514 research abstracts)"
 
 # Optional links (only show if present)
+slidesurl: "/files/slides/2025-datablitz.pdf"
 
 # Map toggle
 talkmap: true
