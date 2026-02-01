@@ -8,53 +8,53 @@ author_profile: true
 {% assign talks = site.talks | sort: "date" | reverse %}
 
 <p style="margin-top:-0.5rem;">
-  <iframe src="{{ base_path }}/talkmap/map.html" height="700" width="100%" style="border:none;"></iframe>
+  <a class="btn btn--primary btn--small" href="{{ base_path }}/talkmap/">View talks map</a>
 </p>
 
 {% assign years = talks | group_by_exp: "t", "t.date | date: '%Y'" %}
 
 {% for y in years %}
-## {{ y.name }}
+  <h2 style="margin-top:1.25rem;">{{ y.name }}</h2>
 
-{% assign invited = y.items | where: "talk_type", "invited" %}
-{% assign conf    = y.items | where: "talk_type", "conference" %}
-{% assign posters = y.items | where: "talk_type", "poster" %}
-{% assign guest   = y.items | where: "talk_type", "guest_lecture" %}
-{% assign groupm  = y.items | where: "talk_type", "group_meeting" %}
+  {% assign invited = y.items | where: "talk_type", "invited" %}
+  {% assign conf    = y.items | where: "talk_type", "conference" %}
+  {% assign posters = y.items | where: "talk_type", "poster" %}
+  {% assign guest   = y.items | where: "talk_type", "guest_lecture" %}
+  {% assign groupm  = y.items | where: "talk_type", "group_meeting" %}
 
-{% if invited.size > 0 %}
-#### Invited talks & seminars
-{% for t in invited %}
-  {% include talk-timeline-item.html talk=t %}
-{% endfor %}
-{% endif %}
+  {% if invited.size > 0 %}
+    <h3 style="margin-top:0.75rem;">Invited talks &amp; seminars</h3>
+    {% for t in invited %}
+      {% include talk-timeline-item.html talk=t %}
+    {% endfor %}
+  {% endif %}
 
-{% if conf.size > 0 %}
-#### Conferences & posters
-{% for t in conf %}
-{% include talk-timeline-item.html talk=t %}
-{% endfor %}
-{% endif %}
+  {% if conf.size > 0 %}
+    <h3 style="margin-top:0.75rem;">Conference talks</h3>
+    {% for t in conf %}
+      {% include talk-timeline-item.html talk=t %}
+    {% endfor %}
+  {% endif %}
 
-{% if guest.size > 0 %}
-#### Guest lectures & teaching
-{% for t in guest %}
-{% include talk-timeline-item.html talk=t %}
-{% endfor %}
-{% endif %}
+  {% if posters.size > 0 %}
+    <h3 style="margin-top:0.75rem;">Posters</h3>
+    {% for t in posters %}
+      {% include talk-timeline-item.html talk=t %}
+    {% endfor %}
+  {% endif %}
 
-{% if groupm.size > 0 %}
-#### Group meetings & retreats
-{% for t in groupm %}
-{% include talk-timeline-item.html talk=t %}
-{% endfor %}
-{% endif %}
+  {% if guest.size > 0 %}
+    <h3 style="margin-top:0.75rem;">Guest lectures &amp; teaching</h3>
+    {% for t in guest %}
+      {% include talk-timeline-item.html talk=t %}
+    {% endfor %}
+  {% endif %}
 
-{% if posters.size > 0 %}
-#### Posters
-{% for t in posters %}
-  {% include talk-timeline-item.html talk=t %}
-{% endfor %}
-{% endif %}
+  {% if groupm.size > 0 %}
+    <h3 style="margin-top:0.75rem;">Group meetings &amp; retreats</h3>
+    {% for t in groupm %}
+      {% include talk-timeline-item.html talk=t %}
+    {% endfor %}
+  {% endif %}
 
 {% endfor %}
