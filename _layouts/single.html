@@ -83,7 +83,9 @@ layout: default
         {% include page__taxonomy.html %}
       </footer>
 
-      {% if page.share %}{% include social-share.html %}{% endif %}
+      {% unless page.collection == 'teaching' %}
+        {% include social-share.html %}
+      {% endunless %}
 
       {% include post_pagination.html %}
     </div>
