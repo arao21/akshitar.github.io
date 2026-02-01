@@ -15,8 +15,8 @@ var addressPoints = [
     -122.1703055
   ],
   [
-    "Tutorial 1 on Relevant Topic in Your Field<br />UC-Berkeley Institute for Testing Science; Berkeley, CA, USA",
-    37.8708393,
-    -122.272863
+    "Simultaneous stomach-brain electrophysiology reveals dynamic coupling in human sleep<br />Sleep Regulation and Function, Gordon Research Seminar; Galveston, Texas, USA",
+    29.3872254,
+    -94.992736
   ]
 ];
