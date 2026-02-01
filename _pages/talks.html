@@ -8,7 +8,7 @@ author_profile: true
 {% assign talks = site.talks | sort: "date" | reverse %}
 
 <p style="margin-top:-0.5rem;">
-  <a class="btn btn--primary btn--small" href="{{ base_path }}/talkmap/">View talks map</a>
+  <a class="btn btn--primary btn--small" href="{{ site.baseurl }}/talkmap/">View talks map</a>
 </p>
 
 {% assign years = talks | group_by_exp: "t", "t.date | date: '%Y'" %}
