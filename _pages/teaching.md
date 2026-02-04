@@ -2,7 +2,6 @@
 layout: single
 title: "Mentoring & Service"
 permalink: /teaching/
-author_profile: true
 ---
 
 {% assign teaching_items = site.teaching | where: "type", "teaching" | sort: "date" | reverse %}
