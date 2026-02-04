@@ -26,8 +26,9 @@ author:
   avatar           : "Profile Pic.jpeg"
   name             : "Akshita Rao"
   pronouns         : # example: "she/her"  
-  bio              : ""
-  employer         : ""
+  bio              : #
+  location         : #
+  employer         : #
   uri              : # URL
   email            : "akshitar@stanford.edu" 
 
