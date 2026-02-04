@@ -14,7 +14,7 @@ permalink: /awards/
 Supports interdisciplinary research in human physiology and performance science.
 
 **Stanford Graduate Fellowship in Science & Engineering**  
-*Office of the Vice Provost for Graduate Education, Stanford University* — 2025  
+*Office of the Vice Provost for Graduate Education, Stanford University* — 2024  
 University-wide fellowship supporting doctoral training and research excellence.
 
 **NIH–NIGMS Molecular Biophysics Training Program Trainee**  
@@ -51,4 +51,4 @@ Awarded for excellence in human engineering research.
 *Nominated by Tufts University School of Engineering* — 2021  
 
 **Pulsar Podcast Speaker**  
-*[Featured the Boston Museum of Science's podcast, Pulsar](https://www.podbean.com/media/share/pb-tj8q8-f2e895?utm_campaign=u_share_ep&utm_medium=dlink&utm_source=u_share)* — 2020
+*[Featured on the Boston Museum of Science's podcast, Pulsar](https://www.podbean.com/media/share/pb-tj8q8-f2e895?utm_campaign=u_share_ep&utm_medium=dlink&utm_source=u_share)* — 2020
