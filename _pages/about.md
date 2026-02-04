@@ -16,10 +16,7 @@ As such, I’m interested in how peripheral physiology and neural rhythms are co
 - Brain-body coupling during sleep
 - Wearable signal processing and physiologic modeling
 - Translational machine learning for clinical decision support
-
 <div class="research-figure">
   <img src="{{ site.baseurl }}/images/BrainBodyGraphic.gif" alt="Stomach–brain coupling during sleep graphic">
-  <div class="caption">
-    <strong>Key idea:</strong> multimodal sleep recordings reveal gut-brain coupling across timescales, which has functional consequences for next day memory recall and subjective sleep quality metrics.
   </div>
 </div>
