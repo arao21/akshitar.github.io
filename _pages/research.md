@@ -15,6 +15,7 @@ I develop signal processing and statistical modeling approaches to study brain�
 I analyze simultaneous high-density EEG and electrogastrography (EGG) recorded overnight to characterize stomach–brain coupling across sleep stages and timescales. This work tests whether gastric rhythms provide structured timing and infraslow organization that aligns with cortical events and sleep microarchitecture.
 
 **Methods:** time-frequency analysis, phase-based coupling metrics, mixed-effects models, permutation testing  
+
 **Keywords:** sleep microarchitecture • interoception • infraslow dynamics • spindles and slow wave oscillations
 
 *Selected work:* [Simultaneous stomach–brain electrophysiology reveals dynamic coupling in human sleep](https://pubmed.ncbi.nlm.nih.gov/41292824/)
@@ -33,6 +34,7 @@ I analyze simultaneous high-density EEG and electrogastrography (EGG) recorded o
 I build pipelines for extracting interpretable autonomic features (e.g., HR/HRV dynamics) from wearable ECG/PPG, and evaluate how these signals vary across behavioral states and clinical contexts. I’m interested in building reliable metrics that generalize across devices and noisy environments.
 
 **Methods:** signal quality indexing, robust feature extraction, validation & benchmarking  
+
 **Keywords:** HRV • wearable sensing • robustness • translational biomarkers
 
 ---
