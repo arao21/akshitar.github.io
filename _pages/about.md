@@ -18,5 +18,4 @@ As such, I’m interested in how peripheral physiology and neural rhythms are co
 - Translational machine learning for clinical decision support
 <div class="research-figure">
   <img src="{{ site.baseurl }}/images/BrainBodyGraphic.gif" alt="Stomach–brain coupling during sleep graphic">
-  </div>
 </div>
