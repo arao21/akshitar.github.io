@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Awards & Honors"
+title: "Awards & Outreach"
 permalink: /awards/
 ---
 ⭐ Stanford Graduate Fellow  
@@ -45,7 +45,10 @@ Awarded for excellence in human engineering research.
 
 ---
 
-## Leadership & Communication Recognition <i class="fa fa-microphone"></i>
+## Outreach <i class="fa fa-microphone"></i>
 
 **Mechanical Engineering Graduation Class Speaker**  
 *Nominated by Tufts University School of Engineering* — 2021  
+
+**Pulsar Podcast Speaker**  
+*[Featured the Boston Museum of Science's podcast, Pulsar](https://www.podbean.com/media/share/pb-tj8q8-f2e895?utm_campaign=u_share_ep&utm_medium=dlink&utm_source=u_share)* — 2020
