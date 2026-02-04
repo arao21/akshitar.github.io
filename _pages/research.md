@@ -19,7 +19,12 @@ I analyze simultaneous high-density EEG and electrogastrography (EGG) recorded o
 
 *Selected work:* [Simultaneous stomach–brain electrophysiology reveals dynamic coupling in human sleep](https://pubmed.ncbi.nlm.nih.gov/41292824/)
 
-
+<div class="research-figure">
+  <img src="{{ site.baseurl }}/images/BrainBodyGraphic.gif" alt="Stomach–brain coupling during sleep graphic">
+  <div class="caption">
+    <strong>Key idea:</strong> multimodal sleep recordings reveal gut-brain coupling across timescales, which has functional consequences for next day memory recall and subjective sleep quality metrics.
+  </div>
+</div>
 ---
 
 ## Wearable Autonomic Signal Processing
