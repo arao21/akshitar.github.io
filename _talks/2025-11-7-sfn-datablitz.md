@@ -13,12 +13,10 @@ location: "San Diego, California, USA"   # used for the map (City, State, Countr
 description: "Presented at NIH Sleep and Circadian Neurobiology DataBlitz Nomination (ranked top 20 among 514 research abstracts)"
 
 # Optional links (only show if present)
-slidesurl: AR_Datablitz_Slide_111725.pdf
+slidesurl: /files/AAR_Datablitz_Slide_111725.pdf
 
 # Map toggle
 talkmap: true
-
-# Optional: if you want to avoid geocoding headaches, hardcode coords
-# latitude: 41.8781
-# longitude: -87.6298
+latitude: 32.7157
+longitude: -117.1611
 ---

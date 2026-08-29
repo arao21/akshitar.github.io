@@ -21,3 +21,6 @@ package-lock.json
 
 # Ignore files created by MacOS
 .DS_Store
+
+# Local Claude Code tooling (launch config points at a machine-specific path)
+.claude/

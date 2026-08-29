@@ -12,11 +12,11 @@ site_theme               : "air" # The available themes options are "default", "
 title                    : "Akshita Rao"
 title_separator          : "-"
 name                     : &name "Akshita Rao"
-description              : &description "PhD Student, Bioengineering, Stanford University"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "PhD candidate in Bioengineering at Stanford, building dynamical biomarkers from gastric electrophysiology to study sleep, autonomic physiology and human performance."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : "https://arao21.github.io" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "arao21/akshitar.github.io"
+repository               : "arao21/arao21.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -38,7 +38,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=wIoY5ggAAAAJ&hl=en"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : #
+  orcid            : "https://orcid.org/0000-0001-7457-8188"
   semantic         : # URL
   ssrn             : # URL
   pubmed           : #
@@ -84,10 +84,10 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
+  preprints:
+    title: 'Preprints'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Articles'
   conferences:
     title: 'Conference Papers'
 
@@ -227,9 +227,6 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
   talks:
     output: true
     permalink: /:collection/:path/
@@ -243,7 +240,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: true
       share: true
@@ -255,7 +252,7 @@ defaults:
     values:
       layout: single
       share: false
-      author_profile: true
+      author_profile: false
   # _teaching
   - scope:
       path: ""
@@ -272,25 +269,16 @@ defaults:
       type: publications
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       share: false
       comments: false
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: false
-      comment: false
   # _talks
   - scope:
       path: ""
       type: talks
     values:
       layout: talk
-      author_profile: true
+      author_profile: false
       share: false
 
 # Sass/SCSS

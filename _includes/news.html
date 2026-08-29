@@ -1,0 +1,25 @@
+{% include base_path %}
+{% if site.data.news and site.data.news.size > 0 %}
+<section class="section news">
+  <p class="section__eyebrow">News</p>
+  <ol class="news__list">
+    {% for item in site.data.news limit: 6 %}
+      <li class="news__item">
+        <span class="news__date">{{ item.date }}</span>
+        <span class="news__body">
+          {% if item.url %}
+            {% if item.url contains 'http' %}
+              <a href="{{ item.url }}">{{ item.text }}</a>
+            {% else %}
+              <a href="{{ base_path }}{{ item.url }}">{{ item.text }}</a>
+            {% endif %}
+          {% else %}
+            {{ item.text }}
+          {% endif %}
+          {% if item.upcoming %}<span class="tag tag--live">Upcoming</span>{% endif %}
+        </span>
+      </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}

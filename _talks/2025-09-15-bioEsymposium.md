@@ -15,8 +15,6 @@ description: "One of five graduate students in the Stanford BioE department to t
 
 # Map toggle
 talkmap: true
-
-# Optional: if you want to avoid geocoding headaches, hardcode coords
-# latitude: 41.8781
-# longitude: -87.6298
+latitude: 37.3382
+longitude: -121.8863
 ---

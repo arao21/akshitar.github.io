@@ -3,7 +3,7 @@ title: "Bioengineering TA Mentor"
 collection: teaching
 type: teaching
 permalink: /teaching/ta-mentor/
-date: 2026-01-01
+date: 2024-12-01
 venue: "Stanford University"
 excerpt: "Mentor to Bioengineering teaching assistants on inclusive pedagogy and classroom practice."
 ---

@@ -16,8 +16,6 @@ description: "Invited to give a talk at the annual Stanford Center for Sleep and
 
 # Map toggle
 talkmap: true
-
-# Optional: if you want to avoid geocoding headaches, hardcode coords
-# latitude: 41.8781
-# longitude: -87.6298
+latitude: 37.4275
+longitude: -122.1697
 ---

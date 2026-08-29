@@ -1,37 +1,25 @@
 ---
-layout: archive
+layout: single
 title: "Publications"
 permalink: /publications/
-excerpt: false
-
+excerpt: "Peer-reviewed papers, conference papers and preprints by Akshita Rao."
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my publications on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<p class="section__intro">
+Also on <a href="{{ site.author.googlescholar }}">Google Scholar</a>. Titles link to abstracts;
+<em>Paper</em> links go to the publisher or preprint server.
+</p>
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+{% for category in site.publication_category %}
+  {% assign posts = site.publications | where: "category", category[0] | sort: "date" | reverse %}
+  {% if posts.size > 0 %}
+    <section class="section">
+      <p class="section__eyebrow">{{ category[1].title }}</p>
+      {% for post in posts %}
+        {% include archive-single-publication.html %}
+      {% endfor %}
+    </section>
+  {% endif %}
+{% endfor %}

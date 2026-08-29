@@ -1,0 +1,139 @@
+{% comment %}
+  Interactive thesis explorer. Every trace is a live simulation of the *model*
+  behind each aim, not recorded data - each panel says so explicitly.
+{% endcomment %}
+
+<section class="section explorer" data-explorer>
+  <p class="section__eyebrow">Explore the work</p>
+  <h2 class="section__title">One signal, three levels of inference</h2>
+  <p class="section__intro">
+    A single noninvasive gastric recording can be read three ways. Pick a level below and
+    change the conditions to see what each one measures.
+  </p>
+
+  <noscript>
+    <div class="research-figure">
+      <img src="{{ site.baseurl }}/images/BrainBodyGraphic.gif" alt="Gastric slow-wave rhythms coupling to NREM cortical oscillations via the vagus nerve, with downstream effects on memory consolidation and sleep quality">
+      <div class="caption">The interactive version of this figure needs JavaScript.</div>
+    </div>
+  </noscript>
+
+  <div class="explorer__tabs" role="tablist" aria-label="Thesis aims">
+    <button class="explorer__tab" role="tab" id="tab-coordination" aria-controls="panel-coordination" aria-selected="true"  data-tab="coordination"><span>01</span> Coordination</button>
+    <button class="explorer__tab" role="tab" id="tab-dynamics"     aria-controls="panel-dynamics"     aria-selected="false" data-tab="dynamics"><span>02</span> Intrinsic dynamics</button>
+    <button class="explorer__tab" role="tab" id="tab-ambulatory"   aria-controls="panel-ambulatory"   aria-selected="false" data-tab="ambulatory"><span>03</span> Ambulatory</button>
+  </div>
+
+  <!-- ── 01 ─────────────────────────────────────────────────────────────── -->
+  <div class="explorer__panel" role="tabpanel" id="panel-coordination" aria-labelledby="tab-coordination" data-panel="coordination">
+    <div class="explorer__viz">
+      <canvas data-canvas="coordination" height="330"></canvas>
+    </div>
+    <div class="explorer__side">
+      <h3 class="explorer__heading">Does the stomach track the sleeping cortex?</h3>
+      <p class="explorer__text">
+        Gastric slow waves keep running through the night. Their <em>amplitude</em> rises and falls on an
+        infraslow timescale &mdash; and that envelope tracks infraslow fluctuations in cortical spindle-band
+        (sigma) power. How tightly depends on the sleep stage.
+      </p>
+
+      <div class="explorer__controls" role="group" aria-label="Sleep stage">
+        <span class="explorer__control-label">Sleep stage</span>
+        <div class="explorer__segmented">
+          <button data-stage="N2" class="is-active">N2</button>
+          <button data-stage="N3">N3</button>
+          <button data-stage="REM">REM</button>
+        </div>
+      </div>
+
+      <dl class="explorer__readout">
+        <div><dt>Gastric amplitude</dt><dd data-out="amp">&mdash;</dd></div>
+        <div><dt>Infraslow alignment</dt><dd data-out="align">&mdash;</dd></div>
+        <div><dt>SO&ndash;spindle locking</dt><dd data-out="lock">&mdash;</dd></div>
+      </dl>
+
+      <p class="explorer__note">Illustrative simulation of the model, not recorded data.</p>
+      <p class="section__more"><a href="https://www.biorxiv.org/content/10.1101/2025.11.13.686572v2">Read the paper on bioRxiv &rarr;</a></p>
+    </div>
+  </div>
+
+  <!-- ── 02 ─────────────────────────────────────────────────────────────── -->
+  <div class="explorer__panel" role="tabpanel" id="panel-dynamics" aria-labelledby="tab-dynamics" data-panel="dynamics" hidden>
+    <div class="explorer__viz">
+      <canvas data-canvas="dynamics" height="330"></canvas>
+    </div>
+    <div class="explorer__side">
+      <h3 class="explorer__heading">What does amplitude do to frequency?</h3>
+      <p class="explorer__text">
+        Standard EGG analysis reports one dominant frequency and stops. Modelling the signal as a
+        stochastic Stuart&ndash;Landau oscillator adds one more parameter &mdash; <em>phase-shear</em>
+        &beta; &mdash; that says how much the rhythm speeds up or slows down as it gets stronger.
+        Drag &beta; and watch the cycles stretch.
+      </p>
+
+      <div class="explorer__controls">
+        <label class="explorer__control-label" for="beta-slider">Phase-shear &beta;</label>
+        <input id="beta-slider" type="range" min="-0.60" max="0.60" step="0.01" value="-0.45" data-beta>
+        <div class="explorer__segmented explorer__segmented--wide">
+          <button data-preset="-0.45" class="is-active">Healthy</button>
+          <button data-preset="-0.08">Gastric dysfunction</button>
+        </div>
+      </div>
+
+      <dl class="explorer__readout">
+        <div><dt>&beta; (phase-shear)</dt><dd data-out="beta">&mdash;</dd></div>
+        <div><dt>Amplitude &rarr; frequency</dt><dd data-out="sense">&mdash;</dd></div>
+      </dl>
+
+      <p class="explorer__note">
+        Illustrative simulation. In the paper, phase-shear magnitude separated gastric dysfunction from
+        healthy controls using a single electrode.
+      </p>
+      <p class="section__more"><a href="https://arxiv.org/abs/2608.23613">Read the paper on arXiv &rarr;</a></p>
+    </div>
+  </div>
+
+  <!-- ── 03 ─────────────────────────────────────────────────────────────── -->
+  <div class="explorer__panel" role="tabpanel" id="panel-ambulatory" aria-labelledby="tab-ambulatory" data-panel="ambulatory" hidden>
+    <div class="explorer__viz">
+      <canvas data-canvas="ambulatory" height="330"></canvas>
+    </div>
+    <div class="explorer__side">
+      <h3 class="explorer__heading">Does any of it survive outside the lab?</h3>
+      <p class="explorer__text">
+        The first two aims live in a sleep laboratory with 64 EEG channels. This one asks whether a
+        couple of abdominal electrodes, worn at home over repeated nights, still carry the signal &mdash;
+        and whether the <em>stability</em> of overnight gastric rhythms indexes autonomic resilience and
+        overnight restoration.
+      </p>
+
+      <div class="explorer__controls" role="group" aria-label="Recording setting">
+        <span class="explorer__control-label">Setting</span>
+        <div class="explorer__segmented">
+          <button data-setting="lab" class="is-active">Lab</button>
+          <button data-setting="home">At home</button>
+        </div>
+      </div>
+
+      <dl class="explorer__readout">
+        <div><dt>Channels</dt><dd data-out="channels">&mdash;</dd></div>
+        <div><dt>Nights per participant</dt><dd data-out="nights">&mdash;</dd></div>
+        <div><dt>Participant burden</dt><dd data-out="burden">&mdash;</dd></div>
+      </dl>
+
+      <p class="explorer__note">Study design. Data collection is ongoing &mdash; no results yet.</p>
+    </div>
+  </div>
+  <div class="explorer__fallback" data-explorer-fallback hidden>
+    <div class="research-figure">
+      <img src="{{ site.baseurl }}/images/BrainBodyGraphic.gif" alt="Gastric slow-wave rhythms coupling to NREM cortical oscillations via the vagus nerve, with downstream effects on memory consolidation and sleep quality">
+      <div class="caption">
+        <strong>One signal, three levels of inference.</strong> Gastric slow waves recorded noninvasively at
+        the abdomen track cortical sleep architecture, encode the stomach's own nonlinear dynamics, and stay
+        measurable in ambulatory recordings.
+      </div>
+    </div>
+  </div>
+</section>
+
+<script defer src="{{ site.baseurl }}/assets/js/thesis-explorer.js?v={{ site.time | date: '%s' }}"></script>

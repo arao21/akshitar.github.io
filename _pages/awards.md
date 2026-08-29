@@ -1,57 +1,141 @@
 ---
 layout: single
-title: "Awards"
+title: "Awards & Honors"
 permalink: /awards/
----
-🏆 NIH Sleep + Circadian Biology DataBlitz Speaker
-
-⭐ Wu Tsai Human Performance Alliance Research Fellow
-
-⭐ Stanford Graduate Fellow  
-
-## 🎓 Fellowships
-
-**[Wu Tsai Human Performance Alliance Research Fellowship](https://humanperformance.stanford.edu/)**  
-*Wu Tsai Human Performance Alliance, Stanford University*, 2025  
-Competitive university fellowship that supports interdisciplinary research in the field of human performance and health.
-
-**[Stanford Graduate Fellowship in Science & Engineering](https://vpge.stanford.edu/fellowships-funding/sgf)**  
-*Office of the Vice Provost for Graduate Education, Stanford University*,2024  
-University-wide fellowship supporting doctoral training and research excellence.
-
-**[NIH–NIGMS Molecular Biophysics Training Program Trainee](https://reporter.nih.gov/project-details/11074694)**  
-*National Institutes of Health*, 2023  
-Competitive graduate training program supporting interdisciplinary biophysics research.
-
-**[National Science Foundation FAST-TRAC Scholar](https://engineering.tufts.edu/fast-trac)**  
-*NSF FAST-TRAC Program*, 2022  
-Program supporting career development and scientific training in translational research.
-
-**[Tufts Summer Scholar](https://students.tufts.edu/academic-advising-and-undergraduate-studies/summer-scholars-program)**  
-*Tufts University*, 2019  
-Selected undergraduate research fellowship.
-
+excerpt: "Fellowships, research honors and outreach recognition."
 ---
 
-## 🏆 Research & Academic Honors 
+<ul class="honors">
+  <li>Siebel Scholar</li>
+  <li>Simons Foundation Poster Award</li>
+  <li>NIH Sleep &amp; Circadian Neurobiology DataBlitz Speaker</li>
+  <li>Wu Tsai Human Performance Alliance Research Fellow</li>
+  <li>Stanford Graduate Fellow</li>
+</ul>
 
-**NIH Sleep and Circadian Neurobiology DataBlitz Speaker**  
-*NIH Sleep and Circadian Neurobiology DataBlitz, SfN*, 2025
-Top 20 talks selected among 514 submitted abstracts at the Society for Neuroscience Annual Meeting, 2025.
+<section class="section">
+  <p class="section__eyebrow">Fellowships</p>
 
-**Undergraduate Highest Thesis Honors**  
-*Tufts University*, 2021  
+  <div class="award">
+    <div class="award__year">2026</div>
+    <div>
+      <h3 class="award__title"><a href="https://www.siebelscholars.com/">Siebel Scholar</a></h3>
+      <p class="award__org">Siebel Scholars Foundation &middot; Stanford Bioengineering</p>
+      <p class="award__desc">Annual award recognising top graduate students in bioengineering, business, computer science and energy science across a selected group of universities.</p>
+    </div>
+  </div>
 
-**De Florez Prize in Human Engineering**  
-*Tufts University*, 2020  
-Awarded for excellence in human engineering research.
+  <div class="award">
+    <div class="award__year">2025</div>
+    <div>
+      <h3 class="award__title"><a href="https://humanperformance.stanford.edu/">Wu Tsai Human Performance Alliance Research Fellowship</a></h3>
+      <p class="award__org">Wu Tsai Human Performance Alliance, Stanford University</p>
+      <p class="award__desc">Competitive university fellowship supporting interdisciplinary research in human performance and health.</p>
+    </div>
+  </div>
 
----
+  <div class="award">
+    <div class="award__year">2025</div>
+    <div>
+      <h3 class="award__title"><a href="https://vpge.stanford.edu/fellowships-funding/sgf">Stanford Graduate Fellowship in Science &amp; Engineering</a></h3>
+      <p class="award__org">Office of the Vice Provost for Graduate Education, Stanford University</p>
+      <p class="award__desc">University-wide fellowship supporting doctoral training and research excellence.</p>
+    </div>
+  </div>
 
-## 💡 Outreach 
+  <div class="award">
+    <div class="award__year">2023</div>
+    <div>
+      <h3 class="award__title"><a href="https://reporter.nih.gov/project-details/11074694">NIH&ndash;NIGMS Molecular Biophysics Training Program Trainee</a></h3>
+      <p class="award__org">National Institutes of Health</p>
+      <p class="award__desc">Competitive graduate training program supporting interdisciplinary biophysics research.</p>
+    </div>
+  </div>
 
-**Mechanical Engineering Graduation Class Speaker**  
-*Nominated by Tufts University School of Engineering*, 2021  
+  <div class="award">
+    <div class="award__year">2022</div>
+    <div>
+      <h3 class="award__title"><a href="https://engineering.tufts.edu/fast-trac">National Science Foundation FAST-TRAC Scholar</a></h3>
+      <p class="award__org">NSF FAST-TRAC Program, Tufts University</p>
+      <p class="award__desc">Career development and scientific training in translational research.</p>
+    </div>
+  </div>
 
-**Pulsar Podcast Speaker**  
-*[Featured on the Boston Museum of Science's podcast, Pulsar](https://www.podbean.com/media/share/pb-tj8q8-f2e895?utm_campaign=u_share_ep&utm_medium=dlink&utm_source=u_share)*, 2020
+  <div class="award">
+    <div class="award__year">2019</div>
+    <div>
+      <h3 class="award__title"><a href="https://students.tufts.edu/academic-advising-and-undergraduate-studies/summer-scholars-program">Tufts Summer Scholar</a></h3>
+      <p class="award__org">Tufts University</p>
+      <p class="award__desc">Selected undergraduate research fellowship.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <p class="section__eyebrow">Research &amp; academic honors</p>
+
+  <div class="award">
+    <div class="award__year">2026</div>
+    <div>
+      <h3 class="award__title">Simons Foundation Poster Award</h3>
+      <p class="award__org">Sleep Regulation and Function Gordon Research Conference</p>
+      <p class="award__desc">Ranked in the top 10 of 130 posters.</p>
+    </div>
+  </div>
+
+  <div class="award">
+    <div class="award__year">2025</div>
+    <div>
+      <h3 class="award__title">Bioengineering Teaching Assistant Award</h3>
+      <p class="award__org">Department of Bioengineering, Stanford University</p>
+      <p class="award__desc">Departmental award for excellence in graduate teaching.</p>
+    </div>
+  </div>
+
+  <div class="award">
+    <div class="award__year">2025</div>
+    <div>
+      <h3 class="award__title">NIH Sleep and Circadian Neurobiology DataBlitz Speaker</h3>
+      <p class="award__org">Society for Neuroscience Annual Meeting</p>
+      <p class="award__desc">One of the top 20 talks selected from 514 submitted abstracts.</p>
+    </div>
+  </div>
+
+  <div class="award">
+    <div class="award__year">2021</div>
+    <div>
+      <h3 class="award__title">Highest Thesis Honors</h3>
+      <p class="award__org">Tufts University</p>
+      <p class="award__desc">Awarded by the undergraduate thesis committee.</p>
+    </div>
+  </div>
+
+  <div class="award">
+    <div class="award__year">2020</div>
+    <div>
+      <h3 class="award__title">De Florez Prize in Human Engineering</h3>
+      <p class="award__org">Tufts University</p>
+      <p class="award__desc">Awarded for excellence in human engineering research.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <p class="section__eyebrow">Speaking &amp; outreach</p>
+
+  <div class="award">
+    <div class="award__year">2021</div>
+    <div>
+      <h3 class="award__title">Mechanical Engineering Graduation Class Speaker</h3>
+      <p class="award__org">Nominated by the Tufts University School of Engineering</p>
+    </div>
+  </div>
+
+  <div class="award">
+    <div class="award__year">2020</div>
+    <div>
+      <h3 class="award__title"><a href="https://www.podbean.com/media/share/pb-tj8q8-f2e895?utm_campaign=u_share_ep&amp;utm_medium=dlink&amp;utm_source=u_share">Pulsar Podcast Speaker</a></h3>
+      <p class="award__org">Museum of Science, Boston</p>
+    </div>
+  </div>
+</section>

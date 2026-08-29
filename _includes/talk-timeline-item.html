@@ -1,27 +1,27 @@
 {% assign t = include.talk %}
 
-<div class="archive__item" style="margin: 0.6rem 0 1.0rem 0;">
-  <div style="display:flex; flex-direction:column; gap:0.2rem;">
-    <div style="font-weight:700; font-size:1.05rem; line-height:1.25;">
-      <a href="{{ site.baseurl }}{{ t.url }}">{{ t.title }}</a>
-    </div>
+<div class="talk-item">
+  {% if t.title and t.show_title != false %}
+    <h4 class="talk-item__title"><a href="{{ site.baseurl }}{{ t.url }}">{{ t.title }}</a></h4>
+    <p class="talk-item__meta">
+      <em>{{ t.venue }}</em>{% if t.location %} &middot; {{ t.location }}{% endif %}{% if t.date %} &middot; {{ t.date | date: "%b %Y" }}{% endif %}
+    </p>
+  {% else %}
+    <h4 class="talk-item__title"><a href="{{ site.baseurl }}{{ t.url }}">{{ t.venue }}</a></h4>
+    <p class="talk-item__meta">
+      {% if t.location %}{{ t.location }}{% endif %}{% if t.date %} &middot; {{ t.date | date: "%b %Y" }}{% endif %}
+    </p>
+  {% endif %}
 
-    <div style="opacity:0.9; font-size:0.95rem; margin-top:-0.15rem;">
-      <i>{{ t.venue }}</i>
-      {% if t.location %} • {{ t.location }}{% endif %}
-      {% if t.date %} • {{ t.date | date: "%b %Y" }}{% endif %}
-    </div>
+  {% if t.description %}
+    <p class="talk-item__desc">{{ t.description }}</p>
+  {% endif %}
 
-    {% if t.description %}
-      <div style="opacity:0.95; margin-top:0.25rem;">
-        {{ t.description }}
-      </div>
-    {% endif %}
-
-    <div style="margin-top:0.35rem;">
-      {% if t.slidesurl %}<a class="btn btn--small" href="{{ t.slidesurl }}">Slides</a>{% endif %}
-      {% if t.posterurl %}<a class="btn btn--small" href="{{ t.posterurl }}">Poster</a>{% endif %}
-      {% if t.videourl %}<a class="btn btn--small" href="{{ t.videourl }}">Video</a>{% endif %}
+  {% if t.slidesurl or t.posterurl or t.videourl %}
+    <div class="entry__links talk-item__links">
+      {% if t.slidesurl %}<a href="{{ t.slidesurl }}">Slides</a>{% endif %}
+      {% if t.posterurl %}<a href="{{ t.posterurl }}">Poster</a>{% endif %}
+      {% if t.videourl %}<a href="{{ t.videourl }}">Video</a>{% endif %}
     </div>
-  </div>
+  {% endif %}
 </div>

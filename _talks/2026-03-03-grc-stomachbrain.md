@@ -16,8 +16,6 @@ description: "Stomach-brain coupling abstract selected for Sleep Regulation and 
 
 # Map toggle
 talkmap: true
-
-# Optional: if you want to avoid geocoding headaches, hardcode coords
-# latitude: 41.8781
-# longitude: -87.6298
+latitude: 29.3013
+longitude: -94.7977
 ---

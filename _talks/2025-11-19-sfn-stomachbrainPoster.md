@@ -8,16 +8,14 @@ date: 2025-11-19
 talk_type: "poster"   # invited | conference | guest_lecture | group_meeting
 
 # Display fields
-venue: "Society for Neuroscience, 2026"
+venue: "Society for Neuroscience Annual Meeting, 2025"
 location: "San Diego, California, USA"   # used for the map (City, State, Country)
-description: "Presented stomach-brain coupling sleep work at the "Kinematics of Sleep-Arousal States" section in SfN 2026"
+description: "Presented stomach-brain coupling sleep work in the 'Kinematics of Sleep-Arousal States' session at SfN 2025."
 
 # Optional links (only show if present)
 
 # Map toggle
 talkmap: true
-
-# Optional: if you want to avoid geocoding headaches, hardcode coords
-# latitude: 41.8781
-# longitude: -87.6298
+latitude: 32.7157
+longitude: -117.1611
 ---

@@ -1,0 +1,31 @@
+# Homepage news strip. Newest first. `upcoming: true` adds an "upcoming" tag.
+# Keep this to roughly the last 8 items; older entries just stop being shown.
+
+- date: "Oct 2026"
+  upcoming: true
+  text: "Presenting stomach–brain coupling work at the 28th Congress of the European Sleep Research Society in Maastricht."
+  url: /talks/
+
+- date: "Sep 2026"
+  upcoming: true
+  text: "Invited seminar in the Tufts Mechanical Engineering seminar series."
+  url: /talks/
+
+- date: "Aug 2026"
+  text: "New preprint: modelling gastric electrophysiology as a stochastic Stuart–Landau oscillator to measure amplitude–frequency coupling."
+  url: https://arxiv.org/abs/2608.23613
+
+- date: "Jul 2026"
+  text: "ASEE paper on BioE 296, Stanford's peer-led pedagogical course for Bioengineering graduate students."
+  url: /publication/2026-asee-community-of-educators/
+
+- date: "2026"
+  text: "Named a Siebel Scholar."
+
+- date: "Mar 2026"
+  text: "Simons Foundation Poster Award at the Sleep Regulation and Function Gordon Research Conference — top 10 of 130 posters."
+  url: /awards/
+
+- date: "Nov 2025"
+  text: "Selected for the NIH Sleep and Circadian Neurobiology DataBlitz at SfN — top 20 of 514 abstracts."
+  url: /talks/2025-11-7-sfn-datablitz/

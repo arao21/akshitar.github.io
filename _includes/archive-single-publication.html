@@ -1,0 +1,25 @@
+{% include base_path %}
+
+<div class="entry">
+  <h3 class="archive__item-title" itemprop="headline">
+    <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+    {% if post.first_author %}<span class="badge">First author</span>{% endif %}
+  </h3>
+
+  {% if post.authors %}
+    <p class="entry__authors">{{ post.authors | replace: "Rao AA", '<span class="self">Rao AA</span>' }}</p>
+  {% endif %}
+
+  <p class="entry__meta">
+    <em>{{ post.venue }}</em>&ensp;&middot;&ensp;{{ post.date | default: "1900-01-01" | date: "%Y" }}
+    {% if post.note %}&ensp;&middot;&ensp;{{ post.note }}{% endif %}
+  </p>
+
+  <div class="entry__links">
+    <a href="{{ base_path }}{{ post.url }}">Abstract</a>
+    {% if post.paperurl %}<a href="{{ post.paperurl }}">Paper</a>{% endif %}
+    {% if post.pdfurl %}<a href="{{ post.pdfurl }}">PDF</a>{% endif %}
+    {% if post.slidesurl %}<a href="{{ post.slidesurl }}">Slides</a>{% endif %}
+    {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}">BibTeX</a>{% endif %}
+  </div>
+</div>
