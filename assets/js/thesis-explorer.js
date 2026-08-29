@@ -72,15 +72,48 @@
     return a * (1 - u) + b * u;
   }
 
+  // Cache the logical (CSS) height per canvas on first use. It must NOT be
+  // re-read from the height attribute: assigning canvas.height rewrites that
+  // attribute, so reading it back would multiply by devicePixelRatio on every
+  // frame (330 -> 660 -> 1320 ...) until the canvas exceeds the browser's max
+  // size and the renderer drops it. Invisible at dpr 1, fatal on Retina.
+  var LOGICAL_H = (typeof WeakMap !== 'undefined') ? new WeakMap() : null;
+  var logicalHeights = [];
+
+  function logicalHeight(canvas) {
+    if (LOGICAL_H) {
+      if (!LOGICAL_H.has(canvas)) {
+        LOGICAL_H.set(canvas, parseInt(canvas.getAttribute('height'), 10) || 320);
+      }
+      return LOGICAL_H.get(canvas);
+    }
+    for (var i = 0; i < logicalHeights.length; i++) {
+      if (logicalHeights[i][0] === canvas) return logicalHeights[i][1];
+    }
+    var h = parseInt(canvas.getAttribute('height'), 10) || 320;
+    logicalHeights.push([canvas, h]);
+    return h;
+  }
+
   function fitCanvas(canvas) {
-    var dpr = window.devicePixelRatio || 1;
+    // Cap the backing scale: a 3x buffer buys nothing here and costs memory.
+    var dpr = Math.min(2, window.devicePixelRatio || 1);
+
     // Measure the canvas itself (CSS width:100%), not the padded parent.
     canvas.style.width = '100%';
     var w = Math.max(200, Math.round(canvas.getBoundingClientRect().width));
-    var h = parseInt(canvas.getAttribute('height'), 10) || 320;
+    var h = logicalHeight(canvas);
     canvas.style.height = h + 'px';
-    canvas.width = Math.round(w * dpr);
-    canvas.height = Math.round(h * dpr);
+
+    var bw = Math.round(w * dpr);
+    var bh = Math.round(h * dpr);
+    // Only touch the backing store when it actually changes -- assigning
+    // width/height clears the canvas and reallocates the buffer.
+    if (canvas.width !== bw || canvas.height !== bh) {
+      canvas.width = bw;
+      canvas.height = bh;
+    }
+
     var ctx = canvas.getContext('2d');
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     return { ctx: ctx, w: w, h: h };
